@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-props-no-spreading */
 import React from "react";
 import {
   GridComponent,
@@ -34,8 +35,7 @@ const Customers = () => {
         allowSorting
       >
         <ColumnsDirective>
-          {/* eslint-disable-next-line react/jsx-props-no-spreading */}
-          {customersGrid.map((item, index) => (
+                  {customersGrid.map((item, index) => (
             <ColumnDirective key={index} {...item} />
           ))}
         </ColumnsDirective>

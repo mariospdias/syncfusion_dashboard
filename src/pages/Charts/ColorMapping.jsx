@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-props-no-spreading */
 import React from "react";
 import {
   ChartComponent,
@@ -55,7 +56,6 @@ const ColorMapping = () => {
             />
           </SeriesCollectionDirective>
           <RangeColorSettingsDirective>
-            {/* eslint-disable-next-line react/jsx-props-no-spreading */}
             {rangeColorMapping.map((item, index) => (
               <RangeColorSettingDirective key={index} {...item} />
             ))}

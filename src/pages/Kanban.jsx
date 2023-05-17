@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-props-no-spreading */
 import React from "react";
 import {
   KanbanComponent,
@@ -18,7 +19,6 @@ const Kanban = () => (
       cardSettings={{ contentField: "Summary", headerField: "Id" }}
     >
       <ColumnsDirective>
-        {/* eslint-disable-next-line react/jsx-props-no-spreading */}
         {kanbanGrid.map((item, index) => (
           <ColumnDirective key={index} {...item} />
         ))}

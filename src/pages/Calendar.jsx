@@ -1,3 +1,5 @@
+/* eslint-disable no-param-reassign */
+/* eslint-disable react/destructuring-assignment */
 import React, { useState } from "react";
 import {
   ScheduleComponent,
@@ -17,7 +19,6 @@ import { DatePickerComponent } from "@syncfusion/ej2-react-calendars";
 import { scheduleData } from "../data/dummy";
 import { Header } from "../components";
 
-// eslint-disable-next-line react/destructuring-assignment
 const PropertyPane = (props) => (
   <div className="pt-5 px-5 bg-white">{props.children}</div>
 );
@@ -31,7 +32,6 @@ const Scheduler = () => {
   };
 
   const onDragStart = (arg) => {
-    // eslint-disable-next-line no-param-reassign
     arg.navigation.enable = true;
   };
 

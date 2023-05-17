@@ -1,3 +1,5 @@
+/* eslint-disable no-sequences */
+/* eslint-disable consistent-return */
 import React from "react";
 import {
   ChartComponent,
@@ -22,10 +24,8 @@ import { ChartsHeader } from "../../components";
 
 const date1 = new Date("2017, 1, 1");
 
-// eslint-disable-next-line consistent-return
 function filterValue(value) {
   if (value.x >= date1) {
-    // eslint-disable-next-line no-sequences
     return value.x, value.high, value.low;
   }
 }

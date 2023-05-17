@@ -1,3 +1,4 @@
+/* eslint-disable no-template-curly-in-string */
 import React from "react";
 import {
   SparklineComponent,
@@ -20,7 +21,6 @@ class SparkLine extends React.PureComponent {
         border={{ color: currentColor, width: 2 }}
         tooltipSettings={{
           visible: true,
-          // eslint-disable-next-line no-template-curly-in-string
           format: "${x} : data ${yval}",
           trackLineSettings: {
             visible: true,

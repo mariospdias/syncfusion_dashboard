@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-constructed-context-values */
 import React, { createContext, useContext, useState } from "react";
 
 const StateContext = createContext();
@@ -31,7 +32,6 @@ export const ContextProvider = ({ children }) => {
     setIsClicked({ ...initialState, [clicked]: true });
 
   return (
-    // eslint-disable-next-line react/jsx-no-constructed-context-values
     <StateContext.Provider
       value={{
         currentColor,

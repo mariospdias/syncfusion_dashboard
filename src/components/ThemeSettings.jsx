@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import React from "react";
 import { MdOutlineCancel } from "react-icons/md";
 import { BsCheck } from "react-icons/bs";
@@ -37,7 +38,6 @@ const ThemeSettings = () => {
               onChange={setMode}
               checked={currentMode === "Light"}
             />
-            {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
             <label htmlFor="light" className="ml-2 text-md cursor-pointer">
               Light
             </label>
@@ -52,7 +52,6 @@ const ThemeSettings = () => {
               className="cursor-pointer"
               checked={currentMode === "Dark"}
             />
-            {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
             <label htmlFor="dark" className="ml-2 text-md cursor-pointer">
               Dark
             </label>

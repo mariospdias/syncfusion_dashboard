@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-props-no-spreading */
 import React from "react";
 import {
   GridComponent,
@@ -30,7 +31,6 @@ const Employees = () => {
         toolbar={toolbarOptions}
       >
         <ColumnsDirective>
-          {/* eslint-disable-next-line react/jsx-props-no-spreading */}
           {employeesGrid.map((item, index) => (
             <ColumnDirective key={index} {...item} />
           ))}

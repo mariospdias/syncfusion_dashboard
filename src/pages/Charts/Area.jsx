@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-props-no-spreading */
 import React from "react";
 import {
   ChartComponent,
@@ -33,9 +34,7 @@ const Area = () => {
           legendSettings={{ background: "white" }}
         >
           <Inject services={[SplineAreaSeries, DateTime, Legend]} />
-          <SeriesCollectionDirective>
-            {/* eslint-disable-next-line react/jsx-props-no-spreading */}
-            {areaCustomSeries.map((item, index) => (
+          <SeriesCollectionDirective>            {areaCustomSeries.map((item, index) => (
               <SeriesDirective key={index} {...item} />
             ))}
           </SeriesCollectionDirective>
